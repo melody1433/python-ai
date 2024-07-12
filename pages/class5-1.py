@@ -30,7 +30,7 @@ i = 0
 for product_name, details in st.session_state.product.items():
     with cols[i % col_num]:  # 這是取餘數來顯示在哪一個欄位
         st.image(details["image"], use_column_width=True)
-        st.markdown(f"###{product_name}")
+        st.markdown(f"{product_name}")
         st.markdown(f"價格：${details['price']}")
         st.markdown(f"庫存：{details['stock']}")
 
